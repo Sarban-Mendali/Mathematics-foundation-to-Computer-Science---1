@@ -1,0 +1,178 @@
+const data=[
+/* SECTION 1: SET, RELATION & FUNCTION */
+{section:"Set, Relation & Function",q:"Define a set with suitable examples.",a:"A set is a well-defined collection of distinct objects. Example: A={1,2,3,4}, B={a,e,i,o,u}."},
+{section:"Set, Relation & Function",q:"Write any three types of sets.",a:"Finite set, Infinite set and Empty (Null) set."},
+{section:"Set, Relation & Function",q:"Define union and intersection of sets.",a:"Union (A∪B) contains elements present in A or B or both. Intersection (A∩B) contains elements common to both A and B."},
+{section:"Set, Relation & Function",q:"What is a subset? Give an example.",a:"A is a subset of B if every element of A belongs to B. Example: A={1,2}, B={1,2,3}."},
+{section:"Set, Relation & Function",q:"Define Cartesian product of two sets.",a:"The Cartesian product A×B is the set of all ordered pairs (a,b) where a∈A and b∈B."},
+{section:"Set, Relation & Function",q:"What is a relation?",a:"A relation is a subset of the Cartesian product of two sets."},
+{section:"Set, Relation & Function",q:"Define reflexive relation.",a:"A relation R is reflexive if (a,a) ∈ R for every a ∈ A."},
+{section:"Set, Relation & Function",q:"Define symmetric relation.",a:"A relation R is symmetric if (a,b) ∈ R implies (b,a) ∈ R."},
+{section:"Set, Relation & Function",q:"What is a function?",a:"A function is a relation that assigns exactly one output to each input."},
+{section:"Set, Relation & Function",q:"Define domain and range of a function.",a:"Domain is the set of all input values; Range is the set of all output values."},
+{section:"Set, Relation & Function",q:"Define one-to-one (injective) function.",a:"A function is injective if distinct inputs have distinct outputs."},
+{section:"Set, Relation & Function",q:"Define onto (surjective) function.",a:"A function is surjective if every element of the codomain has a pre-image."},
+{section:"Set, Relation & Function",q:"What is a bijective function?",a:"A bijective function is both injective and surjective."},
+{section:"Set, Relation & Function",q:"Define inverse of a function.",a:"The inverse of a function reverses mapping and exists only for bijective functions."},
+{section:"Set, Relation & Function",q:"Define ceiling and floor functions.",a:"Ceiling ⌈x⌉ is the smallest integer ≥ x; Floor ⌊x⌋ is the greatest integer ≤ x."},
+
+/* SECTION 2: COUNTING & RECURRENCE */
+{section:"Counting Techniques & Recurrence",q:"Define the basic principle of counting.",a:"If a task can be performed in m ways and another independent task in n ways, then both tasks can be performed in m×n ways."},
+{section:"Counting Techniques & Recurrence",q:"State the Pigeonhole principle.",a:"If n+1 objects are placed into n boxes, then at least one box contains more than one object."},
+{section:"Counting Techniques & Recurrence",q:"Define permutation.",a:"Permutation is an arrangement of objects in a specific order."},
+{section:"Counting Techniques & Recurrence",q:"Define combination.",a:"Combination is the selection of objects where order does not matter."},
+{section:"Counting Techniques & Recurrence",q:"What is a binomial coefficient?",a:"Binomial coefficient represents the number of ways to choose r elements from n elements, written as nCr."},
+{section:"Counting Techniques & Recurrence",q:"State the binomial theorem.",a:"(a+b)^n = Σ nCr a^(n−r) b^r, where r = 0 to n."},
+{section:"Counting Techniques & Recurrence",q:"Write the first five Fibonacci numbers.",a:"0, 1, 1, 2, 3."},
+{section:"Counting Techniques & Recurrence",q:"Define recurrence relation.",a:"A recurrence relation defines a sequence using previous terms."},
+
+/* SECTION 3: GRAPH THEORY */
+{section:"Graph Theory",q:"Define a graph.",a:"A graph is an ordered pair G=(V,E) where V is a set of vertices and E is a set of edges."},
+{section:"Graph Theory",q:"Define vertex and edge.",a:"A vertex is a node of a graph. An edge is a connection between two vertices."},
+{section:"Graph Theory",q:"What is a simple graph?",a:"A simple graph has no loops and no multiple edges."},
+{section:"Graph Theory",q:"Define degree of a vertex.",a:"Degree of a vertex is the number of edges incident to it."},
+{section:"Graph Theory",q:"What is a complete graph?",a:"A complete graph connects every pair of distinct vertices."},
+{section:"Graph Theory",q:"Define path and cycle.",a:"A path is a sequence of connected vertices. A cycle starts and ends at the same vertex."},
+{section:"Graph Theory",q:"What is a directed graph (digraph)?",a:"A graph whose edges have direction."},
+{section:"Graph Theory",q:"Define weighted graph.",a:"A graph with weights assigned to edges."},
+{section:"Graph Theory",q:"What is a tree?",a:"A connected graph with no cycles."},
+{section:"Graph Theory",q:"Define planar graph.",a:"A graph that can be drawn without edge crossings."},
+
+/* SECTION 4: MATRIX THEORY */
+{section:"Matrix Theory",q:"Define a matrix.",a:"A matrix is a rectangular array of elements arranged in rows and columns."},
+{section:"Matrix Theory",q:"Write different types of matrices.",a:"Row matrix, Column matrix, Square matrix, Zero matrix, Identity matrix."},
+{section:"Matrix Theory",q:"Define symmetric matrix.",a:"A square matrix equal to its transpose."},
+{section:"Matrix Theory",q:"Define skew-symmetric matrix.",a:"A square matrix whose transpose is the negative of the matrix."},
+{section:"Matrix Theory",q:"Define orthogonal matrix.",a:"A matrix whose transpose is equal to its inverse."},
+{section:"Matrix Theory",q:"Define determinant of a matrix.",a:"A scalar value computed from a square matrix used to find invertibility."},
+{section:"Matrix Theory",q:"What is rank of a matrix?",a:"The maximum number of linearly independent rows or columns."},
+{section:"Matrix Theory",q:"Define Eigen values and Eigen vectors.",a:"Eigen values are scalars λ and Eigen vectors are non-zero vectors satisfying Ax = λx."},
+{section:"Set, Relation & Function", q:"Prove any two properties of set operations.", a:"Two properties of set operations are: (i) Commutative law: A ∪ B = B ∪ A and A ∩ B = B ∩ A. (ii) Associative law: A ∪ (B ∪ C) = (A ∪ B) ∪ C and A ∩ (B ∩ C) = (A ∩ B) ∩ C."},
+
+{section:"Set, Relation & Function", q:"Verify De Morgan’s laws using Venn diagrams.", a:"De Morgan’s laws state that (A ∪ B)' = A' ∩ B' and (A ∩ B)' = A' ∪ B'. These can be verified using Venn diagrams by shading equivalent regions."},
+
+{section:"Set, Relation & Function", q:"Find the Cartesian product A × B for given sets A and B.", a:"The Cartesian product A × B is the set of all ordered pairs (a, b) such that a ∈ A and b ∈ B."},
+
+{section:"Set, Relation & Function", q:"Determine whether a given relation is reflexive, symmetric, and transitive.", a:"A relation is reflexive if (a,a) ∈ R for all a, symmetric if (a,b) ∈ R implies (b,a) ∈ R, and transitive if (a,b) and (b,c) ∈ R implies (a,c) ∈ R."},
+
+{section:"Set, Relation & Function", q:"Represent a relation using a matrix.", a:"A relation can be represented using a matrix where entry is 1 if the ordered pair exists in the relation and 0 otherwise."},
+
+{section:"Set, Relation & Function", q:"Represent a relation using a directed graph (digraph).", a:"A relation can be represented by a digraph where elements are vertices and directed edges represent ordered pairs."},
+
+{section:"Set, Relation & Function", q:"Find the closure of a given relation.", a:"The closure of a relation is the smallest relation containing the given relation that satisfies a required property such as reflexive, symmetric, or transitive."},
+
+{section:"Set, Relation & Function", q:"Determine whether a relation is an equivalence relation.", a:"A relation is an equivalence relation if it is reflexive, symmetric, and transitive."},
+
+{section:"Set, Relation & Function", q:"Find equivalence classes of a given equivalence relation.", a:"An equivalence class of an element a is the set of all elements related to a under the equivalence relation."},
+
+{section:"Set, Relation & Function", q:"Explain partition of a set with an example.", a:"A partition of a set is a collection of disjoint non-empty subsets whose union is the set. Example: {{1,2},{3,4}} is a partition of {1,2,3,4}."},
+
+{section:"Set, Relation & Function", q:"Check whether a given function is injective, surjective, or bijective.", a:"A function is injective if distinct inputs have distinct outputs, surjective if every element in codomain is mapped, and bijective if both conditions hold."},
+
+{section:"Set, Relation & Function", q:"Find the inverse of a given function (if it exists).", a:"The inverse of a function exists only if the function is bijective and is obtained by reversing the mapping."},
+
+{section:"Set, Relation & Function", q:"Evaluate ceiling and floor functions for given real numbers.", a:"The ceiling function gives the smallest integer greater than or equal to a number, while the floor function gives the greatest integer less than or equal to the number."},
+
+{section:"Set, Relation & Function", q:"Solve problems on polynomial functions.", a:"Polynomial functions are evaluated by substituting the given value into the polynomial expression and simplifying."},
+
+{section:"Set, Relation & Function", q:"Evaluate logarithmic and exponential functions.", a:"Logarithmic and exponential functions are evaluated using their standard properties and laws such as log(ab)=log a+log b."},
+
+{section:"Counting, Permutations & Combinations", q:"Solve problems using the basic counting principle.", a:"Problems are solved by multiplying the number of ways of each step when multiple independent steps are involved."},
+
+{section:"Counting, Permutations & Combinations", q:"Apply the pigeonhole principle to simple problems.", a:"The pigeonhole principle is applied by showing that distributing more objects than containers forces at least one container to hold more than one object."},
+
+{section:"Counting, Permutations & Combinations", q:"Find permutations of a given set of objects.", a:"Permutations are found using nPr = n!/(n−r)! when order of arrangement is important."},
+
+{section:"Counting, Permutations & Combinations", q:"Solve problems involving combinations.", a:"Combination problems are solved using nCr = n!/[r!(n−r)!] where order of selection does not matter."},
+
+{section:"Counting, Permutations & Combinations", q:"Evaluate binomial coefficients.", a:"Binomial coefficients are evaluated using the formula nCr = n!/[r!(n−r)!]."},
+
+{section:"Counting, Permutations & Combinations", q:"Expand expressions using the binomial theorem.", a:"Expressions are expanded using (x+y)^n = Σ nCr x^(n−r) y^r for r = 0 to n."},
+
+{section:"Counting, Permutations & Combinations", q:"Solve simple recurrence relations.", a:"Simple recurrence relations are solved by finding a pattern or repeatedly substituting previous terms."},
+
+{section:"Counting, Permutations & Combinations", q:"Form a recurrence relation for Fibonacci numbers.", a:"The Fibonacci recurrence relation is F(n) = F(n−1) + F(n−2), with F(0)=0 and F(1)=1."},
+
+{section:"Counting, Permutations & Combinations", q:"Model recurrence relation for the Tower of Hanoi problem.", a:"The recurrence relation for Tower of Hanoi is T(n) = 2T(n−1) + 1, where n is the number of disks."},
+
+{section:"Graph Theory", q:"Determine whether a given graph is connected or disconnected.", a:"A graph is connected if there exists a path between every pair of vertices; otherwise, it is disconnected."},
+
+{section:"Graph Theory", q:"Find paths and cycles in a given graph.", a:"A path is a sequence of distinct vertices joined by edges, while a cycle is a path that starts and ends at the same vertex."},
+
+{section:"Graph Theory", q:"Check whether a graph is complete.", a:"A graph is complete if every pair of distinct vertices is connected by exactly one edge."},
+
+{section:"Graph Theory", q:"Find indegree and outdegree of vertices in a digraph.", a:"In a digraph, indegree is the number of edges entering a vertex and outdegree is the number of edges leaving a vertex."},
+
+{section:"Graph Theory", q:"Identify Euler paths and Euler circuits.", a:"An Euler path visits every edge exactly once, and an Euler circuit is an Euler path that starts and ends at the same vertex."},
+
+{section:"Graph Theory", q:"Identify Hamiltonian paths and Hamiltonian cycles.", a:"A Hamiltonian path visits every vertex exactly once, and a Hamiltonian cycle is a Hamiltonian path that begins and ends at the same vertex."},
+
+{section:"Graph Theory", q:"Verify whether a given graph is a tree.", a:"A graph is a tree if it is connected and contains no cycles."},
+
+{section:"Graph Theory", q:"Find a spanning tree of a graph.", a:"A spanning tree is a subgraph that includes all vertices of the graph, is connected, and contains no cycles."},
+
+{section:"Graph Theory", q:"Determine whether a graph is planar.", a:"A graph is planar if it can be drawn on a plane without any edges crossing each other."},
+
+{section:"Matrices", q:"Perform addition and subtraction of matrices.", a:"Matrix addition and subtraction are performed by adding or subtracting corresponding elements of matrices of the same order."},
+
+{section:"Matrices", q:"Multiply two matrices.", a:"Matrix multiplication is performed by multiplying rows of the first matrix with columns of the second matrix, provided the number of columns of the first equals the number of rows of the second."},
+
+{section:"Matrices", q:"Find determinant of a matrix.", a:"The determinant of a square matrix is a scalar value found using cofactor expansion or other standard methods."},
+
+{section:"Matrices", q:"Find inverse of a matrix using adjoint method.", a:"The inverse of a matrix A is given by A⁻¹ = adj(A)/|A|, provided the determinant |A| ≠ 0."},
+
+{section:"Matrices", q:"Find rank of a matrix.", a:"The rank of a matrix is the maximum number of linearly independent rows or columns, obtained using row reduction."},
+
+{section:"Matrices", q:"Solve system of linear equations using matrices.", a:"A system of linear equations is solved using matrices by representing it as AX = B and finding X = A⁻¹B, if A⁻¹ exists."},
+
+{section:"Matrices", q:"Find Eigen values of a matrix.", a:"Eigen values are found by solving the characteristic equation |A − λI| = 0."},
+
+{section:"Matrices", q:"Find Eigen vectors corresponding to Eigen values.", a:"Eigen vectors are non-zero vectors obtained by solving (A − λI)X = 0 for each Eigen value λ."}
+
+
+
+
+];
+
+let i=0;
+const q=document.getElementById("q"),
+      a=document.getElementById("a"),
+      progress=document.getElementById("progress"),
+      list=document.getElementById("list");
+
+function load(){
+    q.innerText=data[i].q;
+    a.innerText=data[i].a;
+    a.style.display="none";
+    progress.innerText=`Question ${i+1} of ${data.length}`;
+}
+function next(){ i=(i+1)%data.length; load(); }
+function toggle(){ a.style.display=a.style.display==="none"?"block":"none"; }
+function show(id){
+    document.querySelectorAll("section").forEach(s=>s.classList.remove("active"));
+    document.getElementById(id).classList.add("active");
+}
+
+/* Build Complete Question Bank with Section Headings */
+let currentSection="";
+data.forEach((x,n)=>{
+    if(x.section!==currentSection){
+        currentSection=x.section;
+        const h=document.createElement("div");
+        h.className="section-heading";
+        h.innerText=currentSection;
+        list.appendChild(h);
+    }
+    const c=document.createElement("div");
+    c.className="card";
+    c.innerHTML=`<div class="question">${n+1}. ${x.q}</div>
+                 <button class="action-btn">Show Answer</button>
+                 <div class="answer">${x.a}</div>`;
+    c.querySelector("button").onclick=()=>{
+        const ans=c.querySelector(".answer");
+        ans.style.display=ans.style.display==="none"?"block":"none";
+    };
+    list.appendChild(c);
+});
+
+load();
